@@ -1,5 +1,13 @@
+import java.util.Scanner;
+
 public class study01 {
     public static void main(String[] args) {
-        System.out.println("测试新建是否成功！");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.println(fact(number));
+    }
+    public static long fact(int n){
+        if (n == 0) return 1;
+        return n * fact(n - 1);
     }
 }
